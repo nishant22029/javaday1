@@ -5,6 +5,7 @@ public class Months {
         System.out.println("enter no. of days");
       double d=sc.nextInt();
         double months=(d%365)/30;
-        System.out.println("total months according to days="+months);
+        double days=(d%365)%30;
+        System.out.println("total months according to days="+Math.floor(months)+"months " +days+"days");
     }
 }

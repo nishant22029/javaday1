@@ -6,9 +6,15 @@ public class Triangle {
         int a1=sc.nextInt();
         int a2=sc.nextInt();
         int a3=sc.nextInt();
-        if(a1+a2+a3==180)
-            System.out.println("the given triangle is a valid triangle");
+
+        if(a1+a2+a3==180 )
+        {
+            if(a1<=0 || a2<=0||a3<=0)
+                System.out.println("the given triangle  is invalid");
+            else
+                System.out.println("the given triangle  is valid");
+        }
         else
-            System.out.println("the given triangle  is invalid");
+            System.out.println("the given triangle is invalid");
     }
 }
